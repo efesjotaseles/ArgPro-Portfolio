@@ -11,7 +11,7 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
     AppComponent,
     NavbarComponent,
     HeaderComponent,
-    ExperienciaComponent
+    ExperienciaComponent,
   ],
   imports: [
     BrowserModule
