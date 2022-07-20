@@ -10,6 +10,8 @@ export class ExperienciaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("experiencia works!");
+    
   }
 
 }
