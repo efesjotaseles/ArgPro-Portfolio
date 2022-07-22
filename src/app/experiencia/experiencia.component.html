@@ -1,12 +1,6 @@
-<div>
-    <div class="card">
-        <h5 class="card-header">Experiencia</h5>
-        <div class="card-body">
-          <app-cv-infocard
+<h5>Experiencias</h5>
+<app-cv-infocard
           *ngFor="let Exp of experiencias"
           [titulo]="Exp.titulo"
           [detalle]="Exp.detalle"
-          ></app-cv-infocard>
-        </div>
-      </div>
-</div>
+  ></app-cv-infocard>
