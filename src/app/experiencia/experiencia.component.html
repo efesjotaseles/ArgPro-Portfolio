@@ -2,8 +2,11 @@
     <div class="card">
         <h5 class="card-header">Experiencia</h5>
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <app-cv-infocard
+          *ngFor="let Exp of experiencias"
+          [titulo]="Exp.titulo"
+          [detalle]="Exp.detalle"
+          ></app-cv-infocard>
         </div>
       </div>
 </div>
