@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { educaciones } from '../edu';
 
 @Component({
   selector: 'app-educacion',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
+  educaciones = educaciones;
 
   constructor() { }
 
