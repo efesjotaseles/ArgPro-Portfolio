@@ -9,16 +9,22 @@ import { AcercaDe, AppService } from '../app.service';
 })
 export class HeaderComponent implements OnInit {
 
+  acercaDe: string = 'Programador fullstack';
+  /** 
   acercaDe : AcercaDe | undefined;
+  message : string | undefined;
+  */
 
   showAcercaDe(){
-    this.appService.getAcercaDe().subscribe((data: AcercaDe) => this.acercaDe ={...data});
+    //this.appService.getAcercaDe().subscribe((data: AcercaDe) => this.acercaDe ={...data});
   }
 
   constructor(private appService: AppService) { }
 
   ngOnInit(): void {
     console.log("Header works!");
+    this.showAcercaDe();
+    //this.message = this.acercaDe?.message;
     
   }
 

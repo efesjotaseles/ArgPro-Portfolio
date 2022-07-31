@@ -10,12 +10,12 @@ export interface AcercaDe {
 })
 
 export class AppService {
-  rootURL = 'localhost:8080';
+  rootURL = 'https://fast-beyond-06413.herokuapp.com/';
 
 
   constructor(private http: HttpClient) { }
 
   getAcercaDe(){
-    return this.http.get<AcercaDe>(this.rootURL+'/acercade');
+    return this.http.get<AcercaDe>(this.rootURL + '/acercade');
   }
 }
