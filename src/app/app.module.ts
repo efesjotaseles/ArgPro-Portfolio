@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -20,7 +19,6 @@ import { CvInfocardComponent } from './cv-infocard/cv-infocard.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
